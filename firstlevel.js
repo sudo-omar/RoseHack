@@ -1,10 +1,12 @@
-const room = document.getElementById("room");
-function updateClipPath(event) {
-    mouseX = event.clientX
-    mouseY = event.clientY
-    let radius = room.style.clipPath.substring(7, room.style.clipPath.indexOf("p"));
-    console.log( `circle(${radius}px at ${mouseX}px ${mouseY}px`)
+document.addEventListener('DOMContentLoaded', function() {
+    const room = document.getElementById("room");
 
-    room.style.clipPath = `circle(${radius}px at ${mouseX}px ${mouseY}px`;
-}
+    function updateClipPath(event) {
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
 
+        room.style.clipPath = `circle(50px at ${mouseX}px ${mouseY}px)`;
+    }
+
+    document.body.addEventListener('mousemove', updateClipPath);
+});

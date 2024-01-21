@@ -1,4 +1,4 @@
-#img {
+#room {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -10,19 +10,20 @@
     position: relative;
 }
 
-body {
+#body {
     background-color: black;
+    z-index: 3;
+   
 }
 
 #room {
-    position: absolute;
     z-index: 1;
 }
 
 #tablet {
-    position: absolute;
-    z-index: 2;
     border: 5px solid red;
     height: 40px;
+    position: absolute;
+    z-index: 2  
 }
 

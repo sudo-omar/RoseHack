@@ -1,4 +1,4 @@
-img {
+#img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -6,6 +6,23 @@ img {
     clip-path: circle(50px at 50px 50px);
 }
 
+.relative {
+    position: relative;
+}
+
 body {
     background-color: black;
 }
+
+#room {
+    position: absolute;
+    z-index: 1;
+}
+
+#tablet {
+    position: absolute;
+    z-index: 2;
+    border: 5px solid red;
+    height: 40px;
+}
+

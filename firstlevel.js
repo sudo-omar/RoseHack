@@ -9,4 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.body.addEventListener('mousemove', updateClipPath);
+
 });

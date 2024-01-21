@@ -1,28 +1,34 @@
-#img {
+img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    position: relative;
-    clip-path: circle(50px at 50px 50px);
-}
+ }
 
-.relative {
-    position: relative;
-}
-
-body {
+ body {
+    margin: 0;
+    overflow: hidden;
+ }
+ #body {
     background-color: black;
-}
-
-#room {
-    position: absolute;
-    z-index: 1;
-}
-
-#tablet {
-    position: absolute;
     z-index: 2;
-    border: 5px solid red;
-    height: 40px;
-}
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+ }
+ 
+ #room {
+   z-index: 1;
+   clip-path: circle(50px at 50px 50px);
+ }
 
+ #item {
+    background-color: aqua;
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    opacity: 0;
+    top: 640px;
+    left: 350px;
+    z-index: 4
+ }
+ 

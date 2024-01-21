@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="firstlevel.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="firstlevel.js"></script>
 
-    <link rel="stylesheet" href="firstlevel.css">
+
+   <link rel="stylesheet" href="firstlevel.css">
 </head>
-<body onmousemove="updateClipPath(event)">
-    <div class="relative"> 
-        <img src="room2.jpg" id="room">
-        <img src="tabby Background Removed.png" id="tablet">
-    </div>
-    
+<body>
+   <div id="body" onmousemove="updateClipPath(event)">
+       <div id="room">
+           <img src="room1.jpg">
+        </div>
+        <div id="item"></div>
+   </div>
+  
 </body>
 </html>

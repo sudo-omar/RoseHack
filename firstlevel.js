@@ -10,6 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.body.addEventListener('mousemove', updateClipPath);
 
-});
+}); 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const contentDiv = document.getElementById("body");
+ 
+    // Add click event listener to the div
+    contentDiv.addEventListener("click", function () {
+       alert("Div clicked!");
+    });
+ });
+ 
 //no changes

@@ -23,12 +23,32 @@ img {
 
  #item {
     background-color: aqua;
-    position: absolute;
+    position: relative;
     width: 95px;
     height: 95px;
     opacity: 0;
     top: 640px;
     left: 350px;
-    z-index: 4
+    z-index: 4;
  }
  
+ #foundmessage {
+    position: absolute;
+    z-index: 5;
+    color: white;
+ }
+
+ #foundmessageh {
+    z-index: 8
+ }
+
+
+
+ #thirtythree {
+    z-index: 7;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    margin-left: 1200px;
+    margin-top: 300px;
+ }
